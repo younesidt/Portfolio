@@ -112,6 +112,17 @@ img {
     }
 }
 
+@media (max-width: 420px){
+     #textp{
+        font-size: 1rem;
+    }
+}
+@media (max-width: 480px){
+    .link-custom{
+        font-size: 0.6rem;
+    }
+}
+
 /* BTN */
 .btn {
     padding: 12px 28px;
