@@ -1,9 +1,8 @@
 <template>
     <div class="pt-4 md:pt-6 flex flex-col items-center justify-center">
         <div 
-            class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-[url('../../src/assets/profile.jpeg')] bg-cover border md:border-2 border-[#262626]" 
+            class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-[url('/profile.jpeg')] bg-cover border md:border-2 border-[#262626]" 
         >
-        <img src="../assets/profile.jpeg" class="hidden" alt="">
         </div>
         <div class="flex flex-col items-center justify-center">
             <h3 
