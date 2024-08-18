@@ -1,5 +1,5 @@
 <template>
-    <div class="relative pt-6 md:pt-10">
+    <div ref="content" class="relative pt-6 md:pt-10">
         <h1 class="block md:hidden pb-4 text-[#7B7B7B] text-sm">Projects</h1>
         <h1 class="hidden md:block absolute text-[#7B7B7B] text-sm -left-24">Projects</h1>
         <div class="w-full flex flex-col space-y-4">
@@ -93,5 +93,19 @@
     </div>
 </template>
 <script setup>
+import { ref, onMounted } from 'vue';
+import gsap from 'gsap';
 
+const content = ref(null);
+
+onMounted(() => {
+    gsap.from(content.value.children, {
+        delay: 2,
+        duration: 1,
+        y: '+100',
+        autoAlpha: 0,
+        stagger: 0.25,
+        ease: "back.out(1.7)",
+    });
+});
 </script>

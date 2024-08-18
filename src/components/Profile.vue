@@ -1,17 +1,11 @@
 <template>
     <div class="pt-4 md:pt-6 flex flex-col items-center justify-center">
-        <div 
-            class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-[url('/profile.jpeg')] bg-cover border md:border-2 border-[#262626]" 
-        >
-        </div>
-        <div class="flex flex-col items-center justify-center">
-            <h3 
-                class="text-[#FFFFFF] pt-4 text-xl md:text-2xl font-medium"  
-            >Younes Idtalab</h3>
-            <div 
-                class="flex items-center space-x-1 md:space-x-2" 
-            >
-                <p class="text-[#7B7B7B] pt-1 text-base md:text-lg font-normal">Front-end Developer Based In Morocco </p>
+        <div ref="content" class="flex flex-col items-center justify-center">
+            <div class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-[url('/profile.jpeg')] bg-cover border md:border-2 border-[#262626]">
+            </div>
+            <h3 class="text-[#FFFFFF] pt-4 text-xl md:text-2xl font-medium">Younes Idtalab</h3>
+            <div class="flex items-center space-x-1 md:space-x-2">
+                <p class="text-[#7B7B7B] pt-1 text-base md:text-lg font-normal">Front-end Developer Based In Morocco</p>
                 <img src="../assets/maroc.png" class="pt-1 h-5 md:h-6" alt="maroc">
             </div>
             <div class="flex items-center justify-center pt-3 space-x-3">
@@ -69,9 +63,12 @@
     </div>
 </template>
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
+import gsap from 'gsap';
+
 const showName = ref(false);
 const showDetails = ref(false);
+const content = ref(null);
 const CopyBtn = ref("Copy email")
 
 function copyEmail() {
@@ -84,4 +81,15 @@ function copyEmail() {
     });
   }
 }
+
+onMounted(() => {
+    gsap.from(content.value.children, {
+        delay: 0.5,
+        duration: 1,
+        y: '+100',
+        autoAlpha: 0,
+        stagger: 0.25,
+        ease: "back.out(1.7)",
+    });
+});
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="w-[90%] md:w-3/5 xl:w-2/5">
+    <div class="w-[90%] md:w-3/5 xl:w-2/5 2xl:w-1/4">
         <TimeNow />
         <Profile />
         <HomeProjects />
