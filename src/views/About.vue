@@ -2,7 +2,7 @@
     <div class="w-[90%] md:w-3/5 xl:w-2/5">
         <div class="w-full flex flex-col items-center py-5 md:py-8 space-y-1 md:space-y-2">
             <h1 class="text-[#FFFF] text-lg md:text-xl font-medium">Overview</h1>
-            <p class="text-[#7B7B7B] text-base md:text-lg">Take a quick look at who I am and what I do</p>
+            <p class="text-[#7B7B7B] text-base md:text-lg text-center">Take a quick look at who I am and what I do</p>
         </div>
         <div class="relative">
             <h1 class="block md:hidden pb-4 text-[#7B7B7B] text-sm">Intro</h1>

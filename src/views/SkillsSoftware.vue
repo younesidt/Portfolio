@@ -2,7 +2,7 @@
     <div class="w-[90%] md:w-3/5 xl:w-2/5">
         <div class="w-full flex flex-col items-center py-8 space-y-2">
             <h1 class="text-[#FFFF] text-lg md:text-xl font-medium">My Tech Stack</h1>
-            <p class="text-[#7B7B7B] text-sm md:text-base">Not only that, i'm a quick learner, with taking daily updates.</p>
+            <p class="text-[#7B7B7B] text-sm md:text-base text-center">Not only that, i'm a quick learner, with taking daily updates.</p>
         </div>
         <div class="relative">
             <h1 class="block md:hidden pb-4 text-[#7B7B7B] text-sm">Skills</h1>
