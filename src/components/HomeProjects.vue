@@ -3,7 +3,7 @@
         <h1 class="block md:hidden pb-4 text-[#7B7B7B] text-sm">Projects</h1>
         <h1 class="hidden md:block absolute text-[#7B7B7B] text-sm -left-24">Projects</h1>
         <div class="w-full flex flex-col space-y-4">
-            <div class="w-full text-sm md:text-base space-y-3 md:space-y-4 p-4 md:p-6 bg-[#1E1E1E] hover:bg-[#262626] bg-opacity-100 border border-[#262626] rounded-md transition-colors cursor-pointer duration-300 group">
+            <div class="w-full text-sm md:text-base space-y-3 md:space-y-4 p-4 md:p-6 bg-[#1E1E1E] dark:bg-[#1E1E1E] hover:bg-[#262626] bg-opacity-100 border border-[#262626] rounded-md transition-colors cursor-pointer duration-300 group">
                 <div class="flex items-center justify-between">
                     <h3 class="text-[#FFFF]">First Project</h3>
                     <div class="text-[#7B7B7B] transform group-hover:-rotate-45 group-hover:text-[#FFFF] transition-all duration-300">
@@ -29,7 +29,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full text-sm md:text-base space-y-3 md:space-y-4 p-4 md:p-6 bg-[#1E1E1E] hover:bg-[#262626] bg-opacity-100 border border-[#262626] rounded-md transition-colors cursor-pointer duration-300 group">
+            <div class="w-full text-sm md:text-base space-y-3 md:space-y-4 p-4 md:p-6 bg-[#1E1E1E] dark:bg-[#1E1E1E] hover:bg-[#262626] bg-opacity-100 border border-[#262626] rounded-md transition-colors cursor-pointer duration-300 group">
                 <div class="flex items-center justify-between">
                     <h3 class="text-[#FFFF]">Second Project</h3>
                     <div class="text-[#7B7B7B] transform group-hover:-rotate-45 group-hover:text-[#FFFF] transition-all duration-300">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full text-sm md:text-base space-y-3 md:space-y-4 p-4 md:p-6 bg-[#1E1E1E] hover:bg-[#262626] bg-opacity-100 border border-[#262626] rounded-md transition-colors cursor-pointer duration-300 group">
+            <div class="w-full text-sm md:text-base space-y-3 md:space-y-4 p-4 md:p-6 bg-[#1E1E1E] dark:bg-[#1E1E1E] hover:bg-[#262626] bg-opacity-100 border border-[#262626] rounded-md transition-colors cursor-pointer duration-300 group">
                 <div class="flex items-center justify-between">
                     <h3 class="text-[#FFFF]">Third Project</h3>
                     <div class="text-[#7B7B7B] transform group-hover:-rotate-45 group-hover:text-[#FFFF] transition-all duration-300">
@@ -82,7 +82,7 @@
                 </div>
             </div>
             <router-link to="/Projects">
-                <button class="inline-flex w-full items-center justify-center whitespace-nowrap space-x-2 bg-[#1E1E1E] py-2 hover:bg-[#262626] bg-opacity-100 border border-[#262626] rounded-md transition-colors cursor-pointer duration-300 group">
+                <button class="inline-flex w-full items-center justify-center whitespace-nowrap space-x-2 bg-[#1E1E1E] dark:bg-[#1E1E1E] py-2 hover:bg-[#262626] bg-opacity-100 border border-[#262626] rounded-md transition-colors cursor-pointer duration-300 group">
                     <span class="text-[#FFFF] text-sm">View all</span>
                     <div class="text-[#7B7B7B] transform group-hover:-rotate-45 group-hover:text-[#FFFF] transition-all duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right "><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>                
