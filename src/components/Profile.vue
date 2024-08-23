@@ -4,9 +4,8 @@
             <div class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-[url('/profile.jpeg')] bg-cover border md:border-2 border-[#262626]">
             </div>
             <h3 class="text-[#FFFFFF] pt-4 text-xl md:text-2xl font-medium">Younes Idtalab</h3>
-            <div class="flex items-center space-x-1 md:space-x-2">
-                <p class="text-[#7B7B7B] pt-1 text-base md:text-lg font-normal">Front-end Developer Based In Morocco</p>
-                <img src="../assets/maroc.png" class="pt-1 h-5 md:h-6" alt="maroc">
+            <div class="flex items-center">
+                <p class="text-[#7B7B7B] pt-1 text-base md:text-lg font-normal text-center">Front-end Developer Based In Morocco<img src="../assets/maroc.png" class="inline-block h-3 md:h-4 pl-1" alt="maroc"></p>
             </div>
             <div class="flex items-center justify-center pt-3 space-x-3">
                 <div class="relative h-3 w-3 flex items-center justify-center">
@@ -40,7 +39,7 @@
             </div>
             <div class="flex items-center justify-center space-x-4">
                 <div>
-                    <button @click="copyEmail" :class="CopyBtn === 'Copy email' ? 'space-x-2 px-6 md:px-10 bg-[#1E1E1E] hover:bg-[#262626] text-[#FFFF] bg-opacity-100' : 'space-x-1 px-8 md:px-14 bg-[#1E1E1E] text-[#7B7B7B] cursor-default'" class="flex items-center py-2 border border-[#262626] rounded-md text-xs md:text-sm font-medium transition-all duration-300">
+                    <button @click="copyEmail" :class="CopyBtn === 'Copy email' ? 'space-x-2 px-4 sm:px-6 md:px-10 bg-[#1E1E1E] hover:bg-[#262626] text-[#FFFF] bg-opacity-100' : 'space-x-1 px-8 md:px-14 bg-[#1E1E1E] text-[#7B7B7B] cursor-default'" class="flex items-center py-2 border border-[#262626] rounded-md text-[10px] md:text-sm font-medium transition-all duration-300">
                         <span>{{ CopyBtn }}</span>
                         <svg v-if="CopyBtn === 'Copy email'" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 682.667 682.667" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-3 h-3 md:w-4 md:h-4"><g><path d="M565 640H225c-41.36 0-75-33.64-75-75V225c0-41.36 33.64-75 75-75h340c41.36 0 75 33.64 75 75v340c0 41.36-33.64 75-75 75zM225 200c-13.785 0-25 11.215-25 25v340c0 13.785 11.215 25 25 25h340c13.785 0 25-11.215 25-25V225c0-13.785-11.215-25-25-25zM100 440H75c-13.785 0-25-11.215-25-25V75c0-13.785 11.215-25 25-25h340c13.785 0 25 11.215 25 25v23.75h50V75c0-41.36-33.64-75-75-75H75C33.64 0 0 33.64 0 75v340c0 41.36 33.64 75 75 75h25zm0 0" fill="#FFFF" opacity="1" class=""></path></g></svg>
                         <svg v-else xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 26 26" class="w-2 h-2 md:w-3 md:h-3"><path d="M 22.566406 4.730469 L 20.773438 3.511719 C 20.277344 3.175781 19.597656 3.304688 19.265625 3.796875 L 10.476563 16.757813 L 6.4375 12.71875 C 6.015625 12.296875 5.328125 12.296875 4.90625 12.71875 L 3.371094 14.253906 C 2.949219 14.675781 2.949219 15.363281 3.371094 15.789063 L 9.582031 22 C 9.929688 22.347656 10.476563 22.613281 10.96875 22.613281 C 11.460938 22.613281 11.957031 22.304688 12.277344 21.839844 L 22.855469 6.234375 C 23.191406 5.742188 23.0625 5.066406 22.566406 4.730469 Z" fill="#7B7B7B"></path></svg>
@@ -50,7 +49,7 @@
                     <p class="text-[#7B7B7B]">or</p>
                 </div>
                 <div>
-                    <a href="mailto:younesidtalab@gmail.com" class="flex items-center space-x-2 text-[#171717] bg-[#E2E2E2] hover:bg-[#FFFF] py-2 px-6 md:px-10 rounded-md text-xs md:text-sm font-medium transition-all duration-300">
+                    <a href="mailto:younesidtalab@gmail.com" class="flex items-center space-x-2 text-[#171717] bg-[#E2E2E2] hover:bg-[#FFFF] py-2 px-4 sm:px-6 md:px-10 rounded-md text-[10px] md:text-sm font-medium transition-all duration-300">
                         <span>Contact me</span>
                         <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 682.667 682.667" style="enable-background:new 0 0 512 512" xml:space="preserve" class="w-3 h-3 md:w-4 md:h-4"><g><defs><clipPath id="a" clipPathUnits="userSpaceOnUse"><path d="M0 512h512V0H0Z" fill="#171717" opacity="1" data-original="#000000"></path></clipPath></defs><g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)"><path d="M0 0a29.997 29.997 0 0 0-13.368 24.967v.025c0 17.737 14.38 32.116 32.118 32.116h417.763c17.737 0 32.117-14.379 32.117-32.116v-.025c0-10.033-5.012-19.4-13.367-24.967-40.769-27.185-163.615-109.076-209.806-139.876a32.129 32.129 0 0 0-35.651 0C163.614-109.076 40.769-27.185 0 0Z" style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(28.369 375.624)" fill="none" stroke="#171717" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path><path d="M0 0v-289.199a32.096 32.096 0 0 1 9.415-22.718 32.096 32.096 0 0 1 22.718-9.415h417.732a32.096 32.096 0 0 1 22.718 9.415 32.096 32.096 0 0 1 9.415 22.718V0" style="stroke-width:30;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1" transform="translate(15.001 400.6)" fill="none" stroke="#171717" stroke-width="30" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" class="" opacity="1"></path></g></g></svg>
                     </a>
