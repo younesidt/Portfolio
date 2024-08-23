@@ -1,6 +1,6 @@
 <template>
     <div class="w-[90%] md:w-3/5 xl:w-2/5">
-        <div class="w-full flex flex-col items-center py-8 space-y-2">
+        <div ref="header" class="w-full flex flex-col items-center py-8 space-y-2">
             <h1 class="text-[#FFFF] text-lg md:text-xl font-medium">My Tech Stack</h1>
             <p class="text-[#7B7B7B] text-sm md:text-base text-center">Not only that, i'm a quick learner, with taking daily updates.</p>
         </div>
@@ -8,7 +8,7 @@
             <h1 class="block md:hidden pb-4 text-[#7B7B7B] text-sm">Skills</h1>
             <h1 class="hidden md:block absolute text-[#7B7B7B] text-sm -left-24">Skills</h1>
             <div class="w-full flex flex-col space-y-4">
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div ref="cards" class="grid grid-cols-2 md:grid-cols-3 gap-4">
                     <div class="bg-[#1E1E1E] flex flex-col py-10 hover:shadow-xl space-y-3 items-center hover:bg-[#262626] bg-opacity-100 border border-[#262626] rounded-lg transition-colors duration-300">
                         <div class="w-12 h-12">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 434.147 434.147" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path d="m27.336 14.372 28.177 360.474a13.333 13.333 0 0 0 9.263 11.67l148.268 47.008c2.622.831 5.437.831 8.059 0l148.268-47.008a13.333 13.333 0 0 0 9.263-11.67l28.177-360.474C407.417 6.622 401.292 0 393.519 0H40.629c-7.773 0-13.898 6.622-13.293 14.372zm307.217 111.843H150.918l5.542 51.105h174.099L319.17 323.013l-102.096 32.369-102.096-32.369-5.95-76.116h53.588v37.336l55.89 15 55.556-15 4.31-59.503H107.295L95.937 79.419H338.21l-3.657 46.796z" style="" fill="#fc490b" data-original="#fc490b"></path></g></svg>
@@ -73,7 +73,7 @@
             <h1 class="block md:hidden pb-4 text-[#7B7B7B] text-sm">Software</h1>
             <h1 class="hidden md:block absolute text-[#7B7B7B] text-sm -left-24">Software</h1>
             <div class="w-full flex flex-col space-y-4">
-                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div ref="cardst" class="grid grid-cols-2 md:grid-cols-3 gap-4">
                     <div class="bg-[#1E1E1E] flex flex-col py-10 hover:shadow-xl space-y-3 items-center hover:bg-[#262626] bg-opacity-100 border border-[#262626] rounded-lg transition-colors duration-300">
                         <div class="w-12 h-12">
                             <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g><path fill="#00bcff" d="M256.599 256c0-47.128 38.205-85.333 85.333-85.333s85.333 38.206 85.333 85.333c0 47.129-38.206 85.333-85.333 85.333-47.129 0-85.333-38.205-85.333-85.333z" opacity="1" data-original="#00bcff"></path><path fill="#00cf7f" d="M85.932 426.667c0-47.128 38.205-85.333 85.333-85.333l45.475-24.009 39.858 24.009v85.333c0 47.129-38.205 85.333-85.333 85.333s-85.333-38.205-85.333-85.333z" opacity="1" data-original="#00cf7f"></path><path fill="#ff7361" d="m256.599 0-46.434 80.67 46.434 89.996h84.136c47.129 0 85.333-38.205 85.333-85.333S387.863 0 340.735 0z" opacity="1" data-original="#ff7361"></path><path fill="#ff4d12" d="M84.734 85.333c0 47.128 38.205 85.333 85.333 85.333l45.267 17.484 41.263-17.484V0h-86.531c-47.127 0-85.332 38.205-85.332 85.333z" opacity="1" data-original="#ff4d12"></path><path fill="#b659ff" d="M85.932 256c0 47.129 38.205 85.333 85.333 85.333h85.333V170.666h-85.333c-47.128 0-85.333 38.206-85.333 85.334z" opacity="1" data-original="#b659ff"></path></g></svg>                    
@@ -119,5 +119,37 @@
     </div>
 </template>
 <script setup>
+import { ref, onMounted } from 'vue';
+import gsap from 'gsap';
 
+const cards = ref(null);
+const cardst = ref(null);
+const header = ref(null);
+
+onMounted(() => {
+    gsap.from(header.value, {
+        delay: 0.5,
+        duration: 1,
+        y: '-100',
+        autoAlpha: 0,
+        stagger: 0.25,
+        ease: "back.out(1.7)",
+    });
+    gsap.from(cards.value.children, {
+        delay: 0.5,
+        duration: 1,
+        y: '+100',
+        autoAlpha: 0,
+        stagger: 0.25,
+        ease: "back.out(1.7)",
+    });
+    gsap.from(cardst.value.children, {
+        delay: 0.5,
+        duration: 1,
+        y: '+100',
+        autoAlpha: 0,
+        stagger: 0.25,
+        ease: "back.out(1.7)",
+    });
+});
 </script>
